@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Register.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <title>Almira</title>
+</head>
+<body>
+    <nav class="navigation">
+        <a href="" class="logo"><img src="../img/logo.png" alt=""></a>
+        <ul class="menu">
+            <li><a href="../index.html" class="actice"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="../html/SiteMap.html"><i class="fa-solid fa-list"></i> SiteMap</a></li>
+            <li><a href="../html/Categories.html"><i class="fa-solid fa-seedling"></i> Categories</a></li>
+            <li><a href="../html/about_us.html"><i class="fa-solid fa-users"></i> About us</a></li> 
+            <li><a href="#"><i class="fa-solid fa-medal"></i> Beauty's Blog</a></li> 
+        </ul>
+        <form class="search">
+            <input type="text" placeholder="Tìm Kiếm" required="Vui lòng điền vào trường này!">
+            <button title="Tìm Kiếm"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="nav-btns">
+            <a href="../html/login.html" class="nav-user" id="form-open" title="Tài khoản"><i class="fa-solid fa-user"></i></a>
+            <a href="../html/Shopping_cart.html" class="nav-cart" title="Giỏ hàng"><i class="fa-solid fa-cart-shopping"><span class="numberCart">0</span></i></a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="form-box">
+            <form action="" name="formfill" onsubmit="return validation()">
+                <h2>Login</h2>
+                <p id="result"></p>
+                <div class="input-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="Email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="Password" placeholder="Password">
+                </div>
+                <div class="button">
+                    <input type="submit" class="btn" onclick="validation()" value="Login">
+                </div>
+                <div class="group">
+                    <span><a href="#">Forget Password</a></span>
+                    <span><a href="../html/Register.html">Register</a></span>
+                </div>
+            </form>
+        </div>
+</body>
+</html>
